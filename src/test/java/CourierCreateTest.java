@@ -1,3 +1,5 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.junit.After;
 import org.junit.Before;
@@ -28,6 +30,8 @@ public class CourierCreateTest {
     }
 
     @Test
+    @DisplayName("Checking the ability to create a courier")
+    @Description("Checking the ID and status code of a successful response")
     public void courierCanBeCreatedTest() {
         ValidatableResponse response;
         response = courierClient.create(courier);
@@ -42,8 +46,9 @@ public class CourierCreateTest {
     }
 
     @Test
+    @DisplayName("Checking the inability to create two identical couriers")
+    @Description("Checking the body and status code of an unsuccessful response")
     public void errorWhenCreatingDublicateCourierTest() {
-
         courierClient.create(courier);
         ValidatableResponse response2 = courierClient.create(courier);
         int statusCode2 = response2.extract().statusCode();
@@ -53,6 +58,8 @@ public class CourierCreateTest {
     }
 
     @Test
+    @DisplayName("Checking the inability to create courier with UNfilled required fields")
+    @Description("Checking the message and status code of an unsuccessful response")
     public void creatingCourierNotWithAllRequiredFields() {
         courierClient.create(courier);
         ValidatableResponse response = courierClient.createLogin(CourierLogin.from(courier));
@@ -64,8 +71,9 @@ public class CourierCreateTest {
     }
 
     @Test
+    @DisplayName("Checking the inability to create two couriers with the same login")
+    @Description("Checking the message, ID and status code of an unsuccessful response")
     public void creatingCourierWithDuplicateLogin() {
-
         courierClient.create(courier);
         ValidatableResponse response2 = courierClient.create(courierDublicate);
         int statusCode2 = response2.extract().statusCode();

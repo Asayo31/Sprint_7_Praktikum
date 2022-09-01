@@ -1,3 +1,5 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.junit.After;
 import org.junit.Before;
@@ -39,8 +41,9 @@ public class CourierLoginTest{
     }
 
     @Test
+    @DisplayName("Checking the inability to log in with incorrect password")
+    @Description("Checking ID and status code of an unsuccessful response")
     public void authorizationOfCourierWithAnIncorrectPasswordTest() {
-
         courierClient.create(courier);
         ValidatableResponse loginResponce = courierClient.login(CourierCred.from(courier));
         courierId = loginResponce.extract().path("id");
@@ -49,11 +52,12 @@ public class CourierLoginTest{
         assertEquals("Status code is incorrect", SC_NOT_FOUND, statusCode);
     }
     @Test
+    @DisplayName("Checking the inability to log in without a login or password")
+    @Description("Checking the body and status code of an unsuccessful response")
     public void loginCourierNotWithAllRequiredFieldsTest() {
-
         courierClient.create(courier);
-        ValidatableResponse loginResponce = courierClient.login(CourierCred.from(courier));
-        courierId = loginResponce.extract().path("id");
+        ValidatableResponse loginResponse = courierClient.login(CourierCred.from(courier));
+        courierId = loginResponse.extract().path("id");
         ValidatableResponse response = courierClient.loginNotWithPassword(CourierLogin.from(courier));
         int statusCode = response.extract().statusCode();
         assertEquals("Incorrect code when registering a user without required fields", SC_BAD_REQUEST, statusCode);
@@ -64,8 +68,9 @@ public class CourierLoginTest{
     }
 
     @Test
+    @DisplayName("Checking the inability to log in with non-existent credentials")
+    @Description("Checking the body and status code of an unsuccessful response")
     public void AuthorizationErrorUnderNonexistentUserTest() {
-
         ValidatableResponse response = courierClient.login(CourierCred.from(CourierNonAuthorization));
         int statusCode = response.extract().statusCode();
         assertEquals("Invalid response code when logging in with a non-existent user", SC_NOT_FOUND, statusCode);

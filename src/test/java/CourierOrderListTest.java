@@ -1,3 +1,5 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.junit.Test;
 
@@ -11,8 +13,9 @@ public class CourierOrderListTest {
     private OrderListClient orderListClient;
 
     @Test
+    @DisplayName("Checking the ability to get an orders list")
+    @Description("Checking the body and status code of a successful response")
     public void createOrderTest() {
-
         orderListClient = new OrderListClient();
         ValidatableResponse orderListResponse = orderListClient.getList();
         int statusCode = orderListResponse.extract().statusCode();

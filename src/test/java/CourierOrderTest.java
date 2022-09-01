@@ -1,3 +1,5 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.junit.After;
 import org.junit.Before;
@@ -60,8 +62,9 @@ public class CourierOrderTest {
     }
 
     @Test
+    @DisplayName("Checking the ability to create an order")
+    @Description("Checking the body and status code of a successful response")
     public void createOrderTest() {
-
         ValidatableResponse orderResponce = orderClient.create(order);
         int statusCode = orderResponce.extract().statusCode();
         assertEquals("Status code is incorrect", SC_CREATED, statusCode);

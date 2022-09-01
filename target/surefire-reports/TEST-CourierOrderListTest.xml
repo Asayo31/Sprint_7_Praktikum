@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CourierOrderListTest" time="4.674" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CourierOrderListTest" time="3.722" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/anastasiachernysheva/Downloads/JAVA/Sprint_7_Praktikum/target/surefire/surefirebooter2297362445408072034.jar /Users/anastasiachernysheva/Downloads/JAVA/Sprint_7_Praktikum/target/surefire 2022-09-01T12-12-38_676-jvmRun1 surefire9375531320359102310tmp surefire_02416326039285507982tmp"/>
+    <property name="sun.java.command" value="/Users/anastasiachernysheva/Downloads/JAVA/Sprint_7_Praktikum/target/surefire/surefirebooter5563478931786302716.jar /Users/anastasiachernysheva/Downloads/JAVA/Sprint_7_Praktikum/target/surefire 2022-09-01T12-37-37_323-jvmRun1 surefire2043832771957357792tmp surefire_015291610462409430042tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/anastasiachernysheva/Downloads/JAVA/Sprint_7_Praktikum/target/test-classes:/Users/anastasiachernysheva/Downloads/JAVA/Sprint_7_Praktikum/target/classes:/Users/anastasiachernysheva/.m2/repository/io/qameta/allure/allure-junit4/2.19.0/allure-junit4-2.19.0.jar:/Users/anastasiachernysheva/.m2/repository/io/qameta/allure/allure-java-commons/2.19.0/allure-java-commons-2.19.0.jar:/Users/anastasiachernysheva/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/anastasiachernysheva/.m2/repository/io/qameta/allure/allure-model/2.19.0/allure-model-2.19.0.jar:/Users/anastasiachernysheva/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/anastasiachernysheva/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/anastasiachernysheva/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.5/jackson-databind-2.9.5.jar:/Users/anastasiachernysheva/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/anastasiachernysheva/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar:/Users/anastasiachernysheva/.m2/repository/io/qameta/allure/allure-rest-assured/2.19.0/allure-rest-assured-2.19.0.jar:/Users/anastasiachernysheva/.m2/repository/io/qameta/allure/allure-attachments/2.19.0/allure-attachments-2.19.0.jar:/Users/anastasiachernysheva/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/anastasiachernysheva/.m2/repository/io/rest-assured/rest-assured/5.1.1/rest-assured-5.1.1.jar:/Users/anastasiachernysheva/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/anastasiachernysheva/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/anastasiachernysheva/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/anastasiachernysheva/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/anastasiachernysheva/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/anastasiachernysheva/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/anastasiachernysheva/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/anastasiachernysheva/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/anastasiachernysheva/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/anastasiachernysheva/.m2/repository/io/rest-assured/json-path/5.1.1/json-path-5.1.1.jar:/Users/anastasiachernysheva/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/anastasiachernysheva/.m2/repository/io/rest-assured/rest-assured-common/5.1.1/rest-assured-common-5.1.1.jar:/Users/anastasiachernysheva/.m2/repository/io/rest-assured/xml-path/5.1.1/xml-path-5.1.1.jar:/Users/anastasiachernysheva/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
     <property name="allure.results.directory" value="/Users/anastasiachernysheva/Downloads/JAVA/Sprint_7_Praktikum/target/allure-results"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/anastasiachernysheva/Downloads/JAVA/Sprint_7_Praktikum/target/surefire/surefirebooter2297362445408072034.jar"/>
+    <property name="surefire.real.class.path" value="/Users/anastasiachernysheva/Downloads/JAVA/Sprint_7_Praktikum/target/surefire/surefirebooter5563478931786302716.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.15+9-LTS"/>
     <property name="user.name" value="anastasiachernysheva"/>
@@ -60,5 +60,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="createOrderTest" classname="CourierOrderListTest" time="4.52"/>
+  <testcase name="createOrderTest" classname="CourierOrderListTest" time="3.631"/>
 </testsuite>
