@@ -9,7 +9,7 @@ public class CourierGen {
     }
 
     public static Courier getDuplicateLogin() {
-        return new Courier("Test03", "!Qwerty1", "UserTest");
+        return new Courier("Test02", "!Qwerty1", "UserTest");
     }
 
     public static Courier CourierNonAuthorization() {

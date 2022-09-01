@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: CourierCreateTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.065 s <<< FAILURE! - in CourierCreateTest
-creatingCourierWithDuplicateLogin(CourierCreateTest)  Time elapsed: 0.58 s  <<< FAILURE!
-java.lang.AssertionError: Incorrect code for client with duplicate login expected:<409> but was:<201>
-	at CourierCreateTest.creatingCourierWithDuplicateLogin(CourierCreateTest.java:73)
-
-creatingCourierNotWithAllRequiredFields(CourierCreateTest)  Time elapsed: 0.864 s  <<< FAILURE!
-org.junit.ComparisonFailure: Incorrect message when creating a client with incomplete data expected:<Не[ все поля заполнены]> but was:<Не[достаточно данных для создания учетной записи]>
-	at CourierCreateTest.creatingCourierNotWithAllRequiredFields(CourierCreateTest.java:62)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.605 s - in CourierCreateTest
